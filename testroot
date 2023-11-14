@@ -1,0 +1,4 @@
+app_name = u_mo_pfaeh_moose
+allow_warnings = false
+allow_unused = false
+allow_override = false
