@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: UMoPFAEHMooseApp
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Sourabh Bhagwan
+    family-names: Kadambi
+    email: sourabhbhagwan.kadambi@inl.gov
+    affiliation: Idaho National Laboratory
+    orcid: 'https://orcid.org/0000-0001-6085-1817'
+repository-code: >-
+  https://github.com/sourabhkadambi/u_mo_pfaeh_moose
+abstract: >-
+  MOOSE-based codes and inputs to evaluate effective elastic
+  constants of U10Mo with various porosity
+  distributions.
+commit: 7e60249549e92188cef24e4f2dfaf5e84aeec716
