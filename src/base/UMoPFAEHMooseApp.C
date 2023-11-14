@@ -26,7 +26,15 @@ UMoPFAEHMooseApp::registerAll(Factory & f, ActionFactory & af, Syntax & s)
   Registry::registerObjectsTo(f, {"UMoPFAEHMooseApp"});
   Registry::registerActionsTo(af, {"UMoPFAEHMooseApp"});
 
-  /* register custom execute flags, action syntax, etc. here */
+  UMoPFAEHMooseApp::associateSyntax(s, af);
+  Moose::registerAll(f, af, s);
+}
+
+void
+UMoPFAEHMooseApp::associateSyntax(Syntax & syntax, ActionFactory & /*action_factory*/)
+{
+  registerSyntax("PolycrystalVoronoiCoupledVoidICAction",
+                 "ICs/PolycrystalICs/PolycrystalVoronoiCoupledVoidIC"); 
 }
 
 void
